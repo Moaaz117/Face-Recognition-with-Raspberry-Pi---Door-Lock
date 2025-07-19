@@ -3,6 +3,7 @@
 Bu proje, Raspberry Pi kullanılarak YOLOv5 tabanlı bir yüz tanıma sistemi ile çalışan **akıllı kapı kilidi** sisteminin geliştirilmesini amaçlamaktadır. Sistem, gerçek zamanlı görüntü işleyerek **sadece tanınan kişilere** erişim izni verir. Model eğitimi **Roboflow** üzerinden işaretlenen özel veri seti ile gerçekleştirilmiş, daha sonra `YOLOv5` eğitimiyle `exp` klasörü altında model çıktısı alınmıştır. Python, OpenCV ve GPIO kontrolü ile sistem son haline getirilmiştir.
 
 This project aims to develop a smart door lock system that works with a YOLOv5-based face recognition system using Raspberry Pi. The system processes images in real time and grants access only to recognized individuals. The model training was conducted using a specially labeled dataset via Roboflow, and the model output was obtained under the `exp` folder after YOLOv5 training. The system was finalized using Python, OpenCV, and GPIO control.
+
 ---
 
 ## 📷 Project Images | Proje Görselleri
@@ -16,8 +17,7 @@ This project aims to develop a smart door lock system that works with a YOLOv5-b
 <img width="1558" height="804" alt="image" src="https://github.com/user-attachments/assets/762bfb79-4cb9-4d9f-a7df-687947067dec" />
 
 - System connection | Sistem bağlantısı
-  
-![15](https://github.com/user-attachments/assets/1cce725b-2e1d-467e-961a-b927c219b1c7)
+![IMG-20241227-WA0022](https://github.com/user-attachments/assets/5b1a8285-6e73-48e0-acb1-d0c165aa711c)
 
 ## 📁 Project File Structure | Proje Dosya Yapısı
 
@@ -172,7 +172,9 @@ Real-time face recognition is performed using the trained model. If the face con
 ## 📄 Technical Report | Teknik Rapor
 
 Proje detayları için teknik raporu inceleyebilirsiniz
+
 You can review the technical report for project details
+
 ---
 
 ## 📈 Development Plans | Geliştirme Planları
