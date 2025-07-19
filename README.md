@@ -1,8 +1,8 @@
 # Face Recognition-Based Door Lock System with Raspberry Pi 🔐
 
-Bu proje, Raspberry Pi kullanılarak YOLOv5 tabanlı bir yüz tanıma sistemi ile çalışan **akıllı kapı kilidi** sisteminin geliştirilmesini amaçlamaktadır. Sistem, gerçek zamanlı görüntü işleyerek **sadece tanınan kişilere** erişim izni verir. Model eğitimi **Roboflow** üzerinden işaretlenen özel veri seti ile gerçekleştirilmiş, daha sonra `YOLOv5` eğitimiyle `exp` klasörü altında model çıktısı alınmıştır. Python, OpenCV ve GPIO kontrolü ile sistem son haline getirilmiştir.
+>Bu proje, Raspberry Pi kullanılarak YOLOv5 tabanlı bir yüz tanıma sistemi ile çalışan **akıllı kapı kilidi** sisteminin geliştirilmesini amaçlamaktadır. Sistem, gerçek zamanlı görüntü işleyerek **sadece tanınan kişilere** erişim izni verir. Model eğitimi **Roboflow** üzerinden işaretlenen özel veri seti ile gerçekleştirilmiş, daha sonra `YOLOv5` eğitimiyle `exp` klasörü altında model çıktısı alınmıştır. Python, OpenCV ve GPIO kontrolü ile sistem son haline getirilmiştir.
 
-This project aims to develop a smart door lock system that works with a YOLOv5-based face recognition system using Raspberry Pi. The system processes images in real time and grants access only to recognized individuals. The model training was conducted using a specially labeled dataset via Roboflow, and the model output was obtained under the `exp` folder after YOLOv5 training. The system was finalized using Python, OpenCV, and GPIO control.
+>This project aims to develop a smart door lock system that works with a YOLOv5-based face recognition system using Raspberry Pi. The system processes images in real time and grants access only to recognized individuals. The model training was conducted using a specially labeled dataset via Roboflow, and the model output was obtained under the `exp` folder after YOLOv5 training. The system was finalized using Python, OpenCV, and GPIO control.
 
 ---
 
@@ -73,13 +73,13 @@ dlib
 
 ## 🧠 Preparing Datasets with Roboflow | Roboflow ile Veri Hazırlama
 
-1. Roboflow sitesine giriş yapılır.
-2. Yeni bir proje oluşturulur (`Face Lock Project`).
-3. Kendi yüzünüzün veya tanınmasını istediğiniz kişilerin fotoğrafları yüklenir.
-4. Yüzler elle işaretlenir (bounding box).
-5. Export kısmında `YOLOv5 PyTorch` formatı seçilir.
-6. Veri seti `.zip` olarak indirilir ve `datasets` klasörüne açılır.
-7. `data.yaml` dosyası güncellenir:
+>1. Roboflow sitesine giriş yapılır.
+>2. Yeni bir proje oluşturulur (`Face Lock Project`).
+>3. Kendi yüzünüzün veya tanınmasını istediğiniz kişilerin fotoğrafları yüklenir.
+>4. Yüzler elle işaretlenir (bounding box).
+>5. Export kısmında `YOLOv5 PyTorch` formatı seçilir.
+>6. Veri seti `.zip` olarak indirilir ve `datasets` klasörüne açılır.
+>7. `data.yaml` dosyası güncellenir:
 
 ```yaml
 train: ../datasets/images/train
@@ -89,13 +89,13 @@ names: ['face']
 ```
 
 
-1. Log in to the Roboflow website.
-2. Create a new project (`Face Lock Project`).
-3. Upload photos of your own face or the faces of people you want to recognize.
-4. Manually mark the faces (bounding box).
-5. Select the `YOLOv5 PyTorch` format in the Export section.
-6. The dataset is downloaded as a `.zip` file and extracted into the `datasets` folder.
-7. The `data.yaml` file is updated:
+>1. Log in to the Roboflow website.
+>2. Create a new project (`Face Lock Project`).
+>3. Upload photos of your own face or the faces of people you want to recognize.
+>4. Manually mark the faces (bounding box).
+>5. Select the `YOLOv5 PyTorch` format in the Export section.
+>6. The dataset is downloaded as a `.zip` file and extracted into the `datasets` folder.
+>7. The `data.yaml` file is updated:
 
 ```yaml
 train: ../datasets/images/train
@@ -148,44 +148,43 @@ Real-time face recognition is performed using the trained model. If the face con
 * The face is searched for using YOLOv5
 * If there is a match:
 
-* The servo motor is rotated 90° via GPIO
-* The lock closes again after 10 seconds
+  * The servo motor is rotated 90° via GPIO
+  * The lock closes again after 10 seconds
 ---
 
 ## 📊 Project Summary and Advantages | Proje Özeti ve Avantajlar
 
-* Anahtarsız erişim sağlar
-* Engelliler ve yaşlılar için kolay kullanım sunar
-* Kamera destekli anlık güvenlik kontrolü yapılır
-* Python ile geliştirildiği için esnek ve özelleştirilebilir
-* Düşük maliyetli Raspberry Pi ile çalışır
+>* Anahtarsız erişim sağlar
+>* Engelliler ve yaşlılar için kolay kullanım sunar
+>* Kamera destekli anlık güvenlik kontrolü yapılır
+>* Python ile geliştirildiği için esnek ve özelleştirilebilir
+>* Düşük maliyetli Raspberry Pi ile çalışır
 
 
-* Provides keyless access
-* Easy to use for people with disabilities and the elderly
-* Instant security checks with camera support
-* Flexible and customizable as it is developed with Python
-* Works with low-cost Raspberry Pi
+>* Provides keyless access
+>* Easy to use for people with disabilities and the elderly
+>* Instant security checks with camera support
+>* Flexible and customizable as it is developed with Python
+>* Works with low-cost Raspberry Pi
   
 ---
 
 ## 📄 Technical Report | Teknik Rapor
 
-Proje detayları için teknik raporu inceleyebilirsiniz
+>Proje detayları için teknik raporu inceleyebilirsiniz
 
-You can review the technical report for project details
+>You can review the technical report for project details
 
 ---
 
 ## 📈 Development Plans | Geliştirme Planları
 
-* 📌 Uzaktan erişim kontrolü (IoT)
-* 📌 Parmak izi veya ses tanıma ile çoklu güvenlik
-* 📌 Alarm sistemi entegrasyonu
-* 📌 Düşük ışıkta tanıma için infrared kamera desteği
+>* 📌 Uzaktan erişim kontrolü (IoT)
+>* 📌 Parmak izi veya ses tanıma ile çoklu güvenlik
+>* 📌 Alarm sistemi entegrasyonu
+>* 📌 Düşük ışıkta tanıma için infrared kamera desteği
 
-
-* 📌 Remote access control (IoT)
-* 📌 Multi-security with fingerprint or voice recognition
-* 📌 Alarm system integration
-* 📌 Infrared camera support for low-light recognition
+>* 📌 Remote access control (IoT)
+>* 📌 Multi-security with fingerprint or voice recognition
+>* 📌 Alarm system integration
+>* 📌 Infrared camera support for low-light recognition
