@@ -7,7 +7,7 @@ Bu proje, Raspberry Pi kullanılarak YOLOv5 tabanlı bir yüz tanıma sistemi il
 ## 📷 Proje Görselleri
 
 - Sistem özeti
-- 
+  
 <img width="2000" height="1414" alt="mikroişlemciler poster" src="https://github.com/user-attachments/assets/1bf9da1c-703e-46b6-8254-b268e44c980a" />
   
 - Eğitim sırasında kullanılan veri seti örnekleri
