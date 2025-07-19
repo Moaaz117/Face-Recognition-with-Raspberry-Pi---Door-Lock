@@ -15,6 +15,7 @@ Bu proje, Raspberry Pi kullanılarak YOLOv5 tabanlı bir yüz tanıma sistemi il
 <img width="1558" height="804" alt="image" src="https://github.com/user-attachments/assets/762bfb79-4cb9-4d9f-a7df-687947067dec" />
 
 - Sistem bağlantısı
+  
 ![15](https://github.com/user-attachments/assets/1cce725b-2e1d-467e-961a-b927c219b1c7)
 
 ## 📁 Proje Dosya Yapısı
